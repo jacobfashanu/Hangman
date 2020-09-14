@@ -90,9 +90,8 @@ def get_word():
 def main():
     wrong_guess = 0
     print_game(wrong_guess)
-    word = "hi"
-    guesses = ["_"] * len(word)
-    cont = True 
+    word = get_word()
+    guesses = ["_"] * len(word) 
     while(wrong_guess < 7):
         print(" ".join(guesses))
         guess = input("\nPlease guess a letter: ")
